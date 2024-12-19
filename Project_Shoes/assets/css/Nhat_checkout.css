@@ -1,0 +1,102 @@
+body{
+    background-color: #E7E7E3;
+}
+
+/* Thiết kế container */
+.container {
+    font-size: 30px;
+
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+}
+
+/* Tiêu đề và mô tả */
+.container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Email */
+.container .email {
+    font-size: 24px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Nhãn cho input */
+.container label {
+    font-size: 24px;
+    color: #8a4fff;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Input địa chỉ */
+.container input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.container input[type="text"]:focus {
+    border-color: #8a4fff;
+}
+
+.container input[type="text"]::placeholder {
+    color: #bbb; /* Màu xám nhạt hơn */
+    font-style: italic;
+}
+
+/* Gợi ý văn bản */
+.container .hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Nút Check Out */
+.container .checkout-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #8a4fff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi hover nút */
+.container .checkout-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.divH{
+    height: 50px;
+}

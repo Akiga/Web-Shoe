@@ -1,0 +1,829 @@
+li{
+    list-style: none;}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: red;
+}
+
+td{
+    text-align: center;
+}
+
+.green{
+    color: green;
+    margin: 0;
+}
+
+.huy{
+    color:chocolate;
+    margin: 0;
+}
+
+/* style.css */
+.header {
+    background-color: #4CAF50; /* Soft green background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-bottom: 3px solid #2E7D32; /* Darker green border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+
+/* style.css */
+.menu {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #4CAF50; /* Background color */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.menu tr {
+    display: flex; /* Flex layout for menu items */
+    justify-content: space-around;
+}
+
+.menu td {
+    padding: 15px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+.menu a:hover {
+    color: #4CAF50; /* Text color on hover */
+    background-color: #fff; /* Background color on hover */
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+
+/* Dashboard Page */
+.dashboard {
+    width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.dashboard h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    width: 20%;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.stat-box:hover {
+    transform: scale(1.05);
+}
+
+.stat-box h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.stat-box p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.recent-activities, .quick-links {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.recent-activities h3, .quick-links h3 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.recent-activities ul, .quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activities li, .quick-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.recent-activities li:last-child, .quick-links li:last-child {
+    border-bottom: none;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Footer Style */
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #4CAF50; /* Green top border */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.footer a {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+.footer .social-icons {
+    margin-top: 15px;
+}
+
+.footer .social-icons a {
+    color: #4CAF50;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #fff; /* Hover effect for social icons */
+}
+
+
+
+/* Thêm danh muc */
+/* Form Container */
+.form-container {
+    width: 50%;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.form-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-container td {
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Label Styling */
+.form-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Field Styling */
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Submit Button Styling */
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Liệt kê danh muc */
+
+/* Table Title Styling */
+.table-title {
+    width: 100%;
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Container */
+.table-container {
+    width: 50%;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styled Table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.styled-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Action Links */
+.action-link {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.action-link.delete {
+    color: #e74c3c;
+}
+
+.action-link.edit {
+    color: #2980b9;
+}
+
+.action-link:hover {
+    color: white;
+}
+
+.action-link.delete:hover {
+    background-color: #e74c3c;
+}
+
+.action-link.edit:hover {
+    background-color: #2980b9;
+}
+
+/* sửa danh mục */
+
+/* Form Title Styling */
+.form-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Container */
+.form-container {
+    width: 50%;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling inside form */
+.form-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-container td {
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Label Styling */
+.form-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Field Styling */
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Submit Button Styling */
+.form-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* them san pham */
+
+/* Form Title Styling */
+.form-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Container */
+.form-container {
+    width: 50%;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.form-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-container td {
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Label Styling */
+.form-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Field Styling */
+.form-container input[type="text"],
+.form-container input[type="file"],
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Checkbox Label Styling */
+.form-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-container label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+/* Submit Button Styling */
+.form-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* liet ke san pham */
+/* Title Styling */
+.page-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Container */
+.product-table-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Table Styling */
+.product-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styling */
+.product-table-container th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table Cell Styling */
+.product-table-container td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Image Styling */
+.product-image {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Number Formatting */
+.product-table-container td:nth-child(5) {
+    font-weight: bold;
+}
+
+/* Action Button Styling */
+.product-table-container a {
+    
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.product-table-container a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Edit Button Styling */
+.edit-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #f57c00;
+}
+
+/* Table Row Hover Effect */
+.product-table-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .product-table-container table {
+        font-size: 0.9em;
+    }
+    .product-image {
+        width: 80px;
+    }
+}
+
+
+/* Sửa san pham */
+
+/* Form Container */
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.page-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input Fields */
+.form-group input[type="text"], 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Checkbox Group */
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Image Styling */
+.product-image {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .product-image {
+        width: 100px;
+    }
+
+    .form-group input[type="text"], 
+    .form-group select, 
+    .form-group textarea {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+
+/* liet ke dh */
+
+/* Table Styling */
+.order-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.order-table th, .order-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.order-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-accept {
+    background-color: #4CAF50;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+}
+
+.btn-shipping {
+    background-color: #ff9800;
+}
+
+.btn-complete {
+    background-color: #8bc34a;
+}
+
+.btn-return {
+    background-color: #2196F3;
+}
+
+.btn-view {
+    background-color: #9e9e9e;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Status Text Styling */
+.status {
+    font-weight: bold;
+}
+
+.status.cancelled {
+    color: red;
+}
+
+.status.returned {
+    color: #f44336;
+}
+
+.status.completed {
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-table {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+}
+
+/* Xem don hang */
+
+/* Table Styling */
+.order-details-table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.order-details-table th, .order-details-table td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.order-details-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Header Styling */
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-details-table {
+        width: 100%;
+    }
+    .order-details-table th, .order-details-table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}

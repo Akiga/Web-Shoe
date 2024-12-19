@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #232321;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: #E7E7E3;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+
+
+.Manh_banner{
+    width: 90%;
+    height: 86px;
+    margin: auto;
+    background-color: #fafafa ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.Manh_New{
+    padding: 8px 16px;
+}
+
+.Manh_navigation{
+    padding: 8px 16px;
+}
+.Manh_radius{
+    padding: 8px 12px;
+    margin-right: 8px;
+    background-color: #FFA52F;
+    border-radius: 50%;
+}
+
+.Manh_body{
+    padding-top: 16px;
+    background-color: #e7e7e3;
+}
+.Manh_content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.Manh_img{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Manh_shoe{
+    width: 90%;
+    padding: 4px;
+    border-radius: 24px;
+}
+
+.Manh_desc{
+    width: 40%;
+}
+
+.Manh_NR{
+    padding: 4px;
+    background-color: #4A69E2;
+    display: inline;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.Manh_desc h1{
+    margin-top: 16px;
+    font-size: 32px;
+}
+.Manh_price{
+    margin-top: 28px;
+    font-size: 20px;
+    color: #4A69E2;
+    font-weight: 600;
+}
+
+.Manh_color{
+    margin-top: 36px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Manh_circle{
+    margin-top: 20px;
+
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 2px;
+    margin: 4px 8px;
+}
+
+.navy {
+    background-color: #003d7c;
+}
+
+.gray {
+    background-color: #8c8c8c;
+}
+
+.Manh_size{
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Size_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.Size_item{
+    color: #000;
+    background-color: #fff;
+    padding: 12px;
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.Size_item:first-child{
+    margin-left: 0;
+}
+
+.Size_item-off{
+    color: #ccc;
+    background-color: #ccc;
+    padding: 12px;
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: not-allowed;
+}
+
+.Cart{
+    display: flex;
+    margin-top: 32px;
+}
+
+.Manh__addCart{
+    background-color: #ff6600; /* Màu nền cam */
+    color: #fff; /* Màu chữ trắng */
+    font-size: 1.2rem; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    padding: 12px 25px; /* Padding cho nút */
+    border-radius: 30px; /* Bo tròn các góc */
+    border: none; /* Bỏ border */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 350px; /* Chiều rộng tối đa của nút */
+    cursor: pointer; /* Đổi con trỏ khi hover vào nút */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+.Manh__addCart:hover {
+    background-color: #e65c00; /* Màu nền khi hover */
+    transform: translateY(-3px); /* Nâng nút lên khi hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng bóng đổ */
+}
+
+.Manh__addCart:active {
+    background-color: #d64d00; /* Màu nền khi nhấn */
+    transform: translateY(0); /* Dừng hiệu ứng nâng khi nhấn */
+}
+
+.Manh__addCart:focus {
+    outline: none; /* Loại bỏ viền khi nút được focus */
+}
+
+.Manh_heart{
+    width: 10%;
+    padding:12px;
+    margin:  4px;
+    border-radius: 8px;
+    margin-right: 0;
+    background-color: #000;
+}
+
+.ti-heart{
+    color:#fff;
+}
+
+.Manh_buy{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #4A69E2;
+    border-radius: 8px;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+
+.Manh_Related-Products{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-suggestions {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .product-suggestions h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    flex: 0 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .new-badge {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .view-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-control {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-control.prev {
+    left: -20px;
+  }
+  
+  .carousel-control.next {
+    right: -20px;
+  }
+  
+.product-card img{
+    width: 210px;
+    height: 232px;
+    object-fit: cover;
+}
+
+.Cart {
+    margin-top: 20px;
+    text-align: center;
+}

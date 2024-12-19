@@ -1,0 +1,1405 @@
+body { /* Register */
+    position: relative;
+    height: 2186px;
+    margin: 0;
+
+    /* Gray */
+    background: #E7E7E3;
+}
+.a1 {
+    text-decoration: none;
+}
+.pointer:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration-thickness: 0.5px;
+}
+.Nhat_contain-lFrame-rFrame { /* main (Frame 1511): chứa khung trái(Frame-1516), khung phải (Frame-1509) */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    position: absolute;
+    width: 1295px;
+    height: 993px;
+    left: 115px;
+    top: 164px;
+}
+
+.Nhat_lFrame { /* Frame 1516: Khung trái */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 40px;
+    gap: 24px;
+    margin: 0;
+
+    width: calc(544px - 2 * 40px);
+    height: 993px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Nhat_contain-Register-SignUpWith { /* Frame 1481: chứa Register, Sign up with */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 480px;
+    height: 78px;
+
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Nhat_register {
+    width: 151px;
+    height: 43px;
+    
+    /* Rubik/36px */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    /* identical to box height */
+    
+    /* Dark Gray */
+    color: #232321;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Nhat_signUpWith {
+    width: 119px;
+    height: 27px;
+
+    /* Open Sans/Semibold/20px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    /* Dark Gray */
+    color: #232321;
+ 
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Nhat_contain-3-logos { /* Frame 1526: chứa 3 logo */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 480px;
+    height: 64px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#Nhat_container-Google {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 48px;
+    gap: 10px;
+
+    width: 144px;
+    height: 64px;
+    background: none;
+
+    /* Dark Gray */
+    border: 1px solid #232321;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#Nhat_logo-Google {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+    &::after{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+        background: #E7E7E3;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 4;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 35%;
+        height: 32%;
+        background: #E7E7E3;
+        right: 0;
+        z-index: 10;
+        bottom: 50%;
+        transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+    }
+    .Nhat_g-line{
+        width: 50%;
+        height: 20%;
+        background: #0091ea;
+        position: absolute;
+        right: 0;
+        margin: auto;
+        border-bottom-right-radius: 4px 20px;
+        top: 0;
+        bottom: 0;
+        z-index: 15;
+    }
+    .Nhat_yellow {
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        left: -15%;
+        bottom: 32%;
+        margin: auto;
+        background:  #ffc107;
+        transform: rotateZ(-48deg);
+        -webkit-transform: rotateZ(-48deg);
+        z-index: 3;
+    }
+    .Nhat_green{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        border-radius: 0 0 100% 100%;
+        background: #4caf50;
+        z-index: 2;
+    }
+    .Nhat_blue{
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        right: 0;
+        z-index: 30;
+        top: 50%;   
+        z-index: 2;
+        width: 35%;
+        height: 32%;
+        background: #0091ea;
+        right: 0;
+        z-index: 2;
+        transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+    }  
+    .Nhat_red{
+        width: 81%;
+        height: 50%;
+        position: absolute;
+        top: 0px;
+        background: #f44336;
+    }
+}
+
+#Nhat_container-Apple { /* Frame 1513: chứa icon Apple */
+    box-sizing: border-box;
+    color: #000000;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 48px;
+    gap: 10px;
+
+    width: 144px;
+    height: 64px;
+    background: none;
+
+    /* Dark Gray */
+    border: 1px solid #232321;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+#Nhat_container-Facebook { /* Frame 1513: chứa logo Facebook */
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 48px;
+    gap: 10px;
+
+    width: 144px;
+    height: 64px;
+    background: none;
+
+    /* Dark Gray */
+    border: 1px solid #232321;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 1;
+}
+.Nhat_or {
+    width: 29px;
+    height: 27px;
+
+    /* Open Sans/Semibold/20px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    /* Dark Gray */
+    color: #232321;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.Nhat_contain-yourName { /* Frame 1532: chứa các ô điền tên */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 480px;
+    height: 164px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+.Nhat_yourName-label {
+    width: 126px;
+    height: 28px;
+
+    /* Rubik/24px */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    /* Dark Gray */
+    color: #232321;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#Nhat_input-field-FN {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 480px;
+    height: 48px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#Nhat_firstName { /* Frame 1429: chứa khung điền First Name */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 480px;
+    height: 48px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_firstName input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+    
+    width: 480px;
+    height: 48px;
+    background: none;
+
+    /* Dark Gray */
+    border: 1px solid #232321;
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_firstName input::placeholder {
+    width: 448px;
+    height: 19px;
+    
+    /* Copy/Body 1 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    
+    /* Neutrals/Gray 6 */
+    color: #79767C;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+#Nhat_helper-text-FN {/* Error and success states can't be used without the helper-text */
+    display: none;
+    width: 342px;
+    height: 18px;
+
+    /* Regular/12 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+    /* Dark/Grey 2 */
+    color: #BCBCBC;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_input-field-LN {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 480px;
+    height: 48px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_lastName { /* Frame 1429: chứa khung điền Last Name */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 480px;
+    height: 48px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_lastName input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+    
+    width: 480px;
+    height: 48px;
+    background: none;
+
+    /* Dark Gray */
+    border: 1px solid #232321;
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_lastName input::placeholder {
+    width: 448px;
+    height: 19px;
+    
+    /* Copy/Body 1 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    
+    /* Neutrals/Gray 6 */
+    color: #79767C;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+#Nhat_helper-text-LN {
+    display: none;
+    width: 342px;
+    height: 18px;
+    
+    /* Regular/12 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    /* Dark/Grey 2 */
+    color: #BCBCBC;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Nhat_gender { /* chứa các ô chọn giới tính */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 300px;
+    height: 72px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+.Nhat_gender-label {
+    width: 86px;
+    height: 28px;
+
+    /* Rubik/24px */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    /* Dark Gray */
+    color: #232321;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Nhat_gender div {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 300px;
+    height: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.Nhat_gender-div-span1 { /* Frame 1522: chứa ô chọn Male */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+
+    width: 77px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Nhat_gender-div-span2 { /* Frame 1528: chứa ô chọn Female */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    
+    width: 94px;
+    height: 24px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.Nhat_gender-div-span3 { /* Frame 1529: chứa ô chọn Other */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    
+    width: 78px;
+    height: 24px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.Nhat_each-gender-label {
+    width: 38px;
+    height: 22px;
+    display: block;
+    margin-top: 3px;
+
+    /* Open Sans/Semibold/16px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    /* Dark Gray */
+    color: #232321;
+}
+.Nhat_gender input[type="radio"] {
+    margin-right: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+.Nhat_gender input[type="radio"]:checked {
+    background-color: #1F1A24;
+    /* background: none; */
+}
+.Nhat_gender input[type="radio"]:checked::after {
+    content: "\2714"; /* Checkmark symbol */
+    position: relative;
+    left: 12.5%;
+    right: 12.5%;
+    bottom: 18%;
+    color: white;
+}
+
+.Nhat_contain-LoginDetail {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 480px;
+    height: 198px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+}
+.Nhat_LoginDetail-label {
+    width: 153px;
+    height: 28px;
+    
+    /* Rubik/24px */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    
+    /* Dark Gray */
+    color: #232321;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#Nhat_input-field-Email {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 480px;
+    height: 48px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_Email { /* Frame 1429 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 480px;
+    height: 48px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_Email input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+    
+    width: 480px;
+    height: 48px;
+    background: none;
+
+    /* Dark Gray */
+    border: 1px solid #232321;
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_Email input::placeholder {
+    width: 448px;
+    height: 19px;
+
+    /* Copy/Body 1 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+
+    /* Neutrals/Gray 6 */
+    color: #79767C;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+#Nhat_helper-text-Email {
+    display: none;
+    width: 342px;
+    height: 18px;
+    
+    /* Regular/12 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    /* Dark/Grey 2 */
+    color: #BCBCBC;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_input-field-Password {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 480px;
+    height: 82px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_Password { /* Frame 1429 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    
+    width: 480px;
+    height: 82px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_Password input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+    
+    width: 480px;
+    height: 48px;
+    background: none;
+    
+    /* Dark Gray */
+    border: 1px solid #232321;
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#Nhat_Password input::placeholder {
+    width: 448px;
+    height: 19px;
+    
+    /* Copy/Body 1 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    
+    /* Neutrals/Gray 6 */
+    color: #79767C;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+#Nhat_helper-text-Password {
+    width: 480px;
+    height: 30px;
+    
+    /* Copy/Caption */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.4px;
+    
+    /* Neutrals/Gray 9 */
+    color: #36323B;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Nhat_checkbox1 { /* Frame 1522 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    
+    width: 480px;
+    height: 66px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+}
+.Nhat_checkbox1 input[type="checkbox"] {
+    margin-right: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+.Nhat_checkbox1 input[type="checkbox"]:checked {
+    background-color: #1F1A24;
+}
+.Nhat_checkbox1 input[type="checkbox"]:checked::after {
+    content: "\2714"; /* Checkmark symbol */
+    position: relative;
+    left: 12.5%;
+    right: 12.5%;
+    bottom: 20%;
+    color: white;
+}
+.Nhat_checkbox1 label {
+    /* By clicking 'Log In' you agree to our website KicksClub Terms & Conditions, Kicks Privacy Notice and Terms & Conditions. */
+    /* display: flex;
+    align-items: flex-start; */
+    width: 448px;
+    height: 66px;
+
+    /* Open Sans/Semibold/16px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* Dark Gray */
+    color: #232321;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+.Nhat_checkbox1 label a {
+    color: #232321;
+}
+.Nhat_checkbox2 {/* Frame 1531 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    
+    width: 480px;
+    height: 44px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 7;
+    flex-grow: 0;
+}
+.Nhat_checkbox2 input[type="checkbox"] {
+    margin-right: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+.Nhat_checkbox2 input[type="checkbox"]:checked {
+    background-color: #1F1A24;
+}
+.Nhat_checkbox2 input[type="checkbox"]:checked::after {
+    content: "\2714"; /* Checkmark symbol */
+    position: relative;
+    left: 12.5%;
+    right: 12.5%;
+    bottom: 20%;
+    color: white;
+}
+.Nhat_checkbox2 label {
+    /* Keep me logged in - applies to all log in options below. More info */
+    width: 448px;
+    height: 44px;
+
+    /* Open Sans/Semibold/16px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* Dark Gray */
+    color: #232321;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+.Nhat_checkbox2 label a {
+    color: #232321;
+}
+
+.Nhat_button-Register {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 480px;
+    height: 48px;
+    border: none;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 8;
+    flex-grow: 0;
+}
+.Nhat_button-Register div { /* style_layer */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 4px;
+    
+    width: calc(100% - 2 * 16px);
+    height: calc(100% - 2 * 8px);
+    
+    /* Dark Gray */
+    background: #232321;
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.Nhat_button-Register div span { /* chữ Register */
+    margin: 0 auto;
+    width: 70px;
+    height: 17px;
+    margin-left: 3px;
+    
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    
+    /* Pure/White */
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Nhat_button-Register div i{ /* arrow_forward */
+
+    margin: 0 auto;
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    color: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Nhat_rFrame { /* Frame 1509: khung phải */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 64px;
+
+    width: calc(731px - 2 * 24px);
+    height: calc(516px - 2 * 24px);
+
+    background: #FAFAFA;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+.Nhat_rFrame-content { /* Frame 1535 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    width: 683px;
+    height: 356px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.Nhat_rFrame-content-h { /* Frame 1484 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 578px;
+    height: 86px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Nhat_rFrame-content-h- {
+    /* Join Kicks Club Get Rewarded Today. */
+    width: 578px;
+    height: 86px;
+
+    /* Rubik/36px */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+
+    /* Dark Gray */
+    color: #232321;
+}
+
+.Nhat_rFrame-content1 {
+    /* As kicks club member you get rewarded with what you love for doing what you love. Sign up today and receive immediate access to these Level 1 benefits: */
+
+    width: 683px;
+    height: 44px;
+    margin: 0;
+
+    /* Open Sans/Semibold/16px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* Dark Gray */
+    color: #232321;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Nhat_rFrame-content2 { /* Frame 1504 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 578px;
+    height: 110px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.Nhat_rFrame-content2- {
+    /* Free shipping​ A 15% off voucher for your next purchase​ Access to Members Only products and sales​ Access to adidas Running and Training apps​ Special offers and promotions​ */
+
+    width: 578px;
+    height: 110px;
+    margin: 0;
+
+    /* Open Sans/Semibold/16px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* Dark Gray */
+    color: #232321;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Nhat_rFrame-content3 {
+    /* Join now to start earning points, reach new levels and unlock more rewards and benefits from adiClub.​ */
+
+    width: 683px;
+    height: 44px;
+    margin: 0;
+
+    /* Open Sans/Semibold/16px */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* Dark Gray */
+    color: #232321;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Nhat_rFrame-button-Join {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 683px;
+    height: 48px;
+    border: none;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    /* justify-self: flex-end; */
+    flex-grow: 0;
+}
+.Nhat_rFrame-button-Join div { /* style_layer */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 4px;
+
+    width: calc(100% - 2 * 16px);
+    height: calc(100% - 2 * 8px);
+
+    /* Dark Gray */
+    background: #232321;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.Nhat_rFrame-button-Join div span { /* chữ JOIN THE CLUB */
+    margin: 0 auto;
+    width: 107px;
+    height: 17px;
+    margin-left: 3px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+
+    /* Pure/White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Nhat_rFrame-button-Join div i{ /* arrow_forward */
+
+    margin: 0 auto;
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    color: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+footer { /* Frame 1452 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0;
+/* border: solid; */
+
+    position: absolute;
+    width: 1320px;
+    height: 931px;
+    left: calc(50% - 1320px /2);
+    top: 1210px;
+    bottom: 80px;
+}
+

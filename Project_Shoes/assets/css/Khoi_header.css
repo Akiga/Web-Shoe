@@ -1,0 +1,94 @@
+a{
+    color: #000;
+}
+table{
+    background-color: #fff;
+}
+.Khoi_header {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: #E7E7E3;
+}
+
+.Khoi_header a {
+    text-decoration: none;
+    overflow: hidden;
+}
+/* .Khoi_container */
+.Khoi_container {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+/* .Khoi_header */
+.Khoi_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* left: 60px;
+    top: 32px; */
+    z-index: 999;
+}
+
+.fa-solid{
+    font-size: 22px;
+}
+
+/* .Khoi_inner-wrap */
+.Khoi_header .Khoi_inner-wrap {
+    background-color: #FAFAFA;
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 263px;
+}
+
+/* .Khoi_inner-menu */
+.Khoi_header .Khoi_inner-menu ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+}
+
+.Khoi_header .Khoi_inner-menu a {
+    font-size: 22.7px;
+    font-weight: 600;
+    color: #232321;
+}
+
+.Khoi_header .Khoi_inner-menu a:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+    color: #007bff; /* Màu chữ khi hover */
+    border-radius: 10px;
+}
+/* .Khoi_inner-logo */
+
+.Khoi_header .Khoi_inner-logo{
+    flex: 1;
+    text-align: center;
+}
+
+.Khoi_header .Khoi_inner-logo .img {
+    width: auto;
+    height: 32px;
+}
+
+/* .Khoi_inner-right button */
+.Khoi_header .Khoi_inner-right button {
+    background-color: transparent;
+    border: 0;
+    font-size: 22.7px;
+}
+
+.Khoi_header .Khoi_inner-right {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}

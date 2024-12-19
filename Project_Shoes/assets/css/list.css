@@ -1,0 +1,517 @@
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: #E7E7E3;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* .Khoi_container */
+.Khoi_container {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+/* .Khoi_header */
+.Khoi_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* .Khoi_inner-wrap */
+.Khoi_header .Khoi_inner-wrap {
+    background-color: #FAFAFA;
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 263px;
+}
+
+/* .Khoi_inner-menu */
+.Khoi_header .Khoi_inner-menu ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+}
+
+.Khoi_header .Khoi_inner-menu a {
+    font-size: 22.7px;
+    font-weight: 600;
+    color: #232321;
+}
+
+.Khoi_header .Khoi_inner-menu a:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+    color: #007bff; /* Màu chữ khi hover */
+    border-radius: 10px;
+}
+
+/* .Khoi_inner-logo */
+
+.Khoi_header .Khoi_inner-logo{
+    flex: 1;
+    text-align: center;
+}
+
+.Khoi_header .Khoi_inner-logo .img {
+    width: auto;
+    height: 32px;
+}
+
+/* .Khoi_inner-right button */
+.Khoi_header .Khoi_inner-right button {
+    background-color: transparent;
+    border: 0;
+    font-size: 22.7px;
+}
+
+.Khoi_header .Khoi_inner-right {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}
+
+        .Manh__logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .Manh__nav {
+            display: flex;
+            align-items: center;
+        }
+        .Manh__nav-link {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+        .Manh__nav-icon {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .Manh__banner {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .Manh__banner-img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+        .Manh__banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .Manh__section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            width: 100%;
+            padding: 0 20px;
+        }
+        .Manh__section-title {
+            font-size: 24px;
+            margin: 0;
+            text-align: left;
+            flex-grow: 1;
+        }
+        .Manh__item-count {
+            font-size: 14px;
+            color: #888;
+            margin-left: 10px;
+        }
+        .Manh__sort-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .Manh__sort-select {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .Manh__main-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .Manh__filter-container {
+            width: 20%;
+            background-color: #f8f8f8;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            height: fit-content;
+        }
+        .Manh__filter-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .Manh__filter-section {
+            margin-bottom: 20px;
+        }
+        .Manh__filter-section-title {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .Manh__filter-options,
+        .Manh__size-options,
+        .Manh__color-options {
+            display: inline-block;
+            flex-wrap: wrap;
+        }
+        .Manh__filter-option,
+        .Manh__size-option,
+        .Manh__color-option {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .Manh__color-option {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+        .Manh__color-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+        }
+        .Manh__checkbox-options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .Manh__filter-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .Manh__reset-btn {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .Manh__apply-btn {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .Manh__container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 75%;
+        }
+        .Manh__product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .Manh__product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .Manh__product-img {
+            width: 100%;
+            height: 300px;
+            border-radius: 4px;
+        }
+        .Manh__product-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: orange;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .Manh__product-title {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .Manh__product-price {
+            color: green;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .Manh__price-bold {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 20px;
+        }
+        .Manh__pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .Manh__pagination-link {
+            padding: 10px 15px;
+            background-color: #fff;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .Manh__pagination-link-active {
+            background-color: black;
+            color: white;
+        }
+        .Manh__filter-option.selected {
+            background-color: #000;
+            color: #fff;
+            border-color: #000;
+        }
+        
+
+        .Khoi_footer .Khoi_content .Khoi_content-1 {
+            font-weight: 600;
+            font-size: 46px;
+            color: #fff;
+            height: 114px;
+            width: 510px;
+        }
+        
+        .Khoi_footer .Khoi_content .Khoi_content-2 {
+            font-family: "Open Sans", serif;
+            font-weight: 600;
+            font-size: 20px;
+            height: 27px;
+            width: 354px;
+            margin-top: 16px;
+            color: #E7E7E3;
+        }
+        
+        .Khoi_footer .Khoi_content {
+            width: 510px;
+            height: 157px;
+            margin-bottom: 32px;
+        }
+        
+        .Khoi_footer .Khoi_inner-form {
+            background-color: transparent;
+            height: 48px;
+            width: 342px;
+            border-radius: 10px;
+            padding: 10px 16px;
+            border: 1px solid #fff;
+        }
+        
+        .Khoi_footer .Khoi_inner-form input {
+            border: 0;
+            outline: 0;
+            height: 100%;
+            background-color: transparent;
+        }
+        
+        input::placeholder {
+            color: yellow;
+        }
+          
+        .Khoi_footer .Khoi_form .Khoi_button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 48px;
+            width: 102px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            background-color: #232321;
+            border-radius: 10px;
+          }
+        
+        .Khoi_footer .Khoi_form {
+            width: 448px;
+            height: 48px;
+            display: inline-flex;
+            gap: 4px;
+        }
+        
+        .Khoi_footer .Khoi_top-right img{
+            height: 88px;
+        }
+        
+        .Khoi_footer .Khoi_top-right {
+            width: 367px;
+            height: 112px;
+        }
+        
+        /* position */
+        .Khoi_footer .Khoi_top {
+            position: relative;
+            width: 100%;
+            height: 340px;
+            background-color: #4A69E2;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        
+        .Khoi_footer .Khoi_top-left {
+            position: absolute;
+            left: 72px;
+            top: 115px;
+        }
+        
+        .Khoi_footer .Khoi_top-right {
+            position: absolute;
+            left: 785px;
+            top: 120px;
+        }
+        
+        /* bot footer */
+        
+        .Khoi_footer .Khoi_bot {
+            position: relative;
+            width: 100%;
+            height: 591px;
+            background-color: #232321;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        
+        /* .Khoi_bot position */
+        
+        .Khoi_footer .Khoi_bot .Khoi_box-1{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        
+        .Khoi_footer .Khoi_bot .Khoi_box-2{
+            position: absolute;
+            top: 40px;
+            right: 48px;
+        }
+        
+        .Khoi_footer .Khoi_bot .Khoi_box-3{
+            position: absolute;
+            top: 383px;
+            right: 29px;
+        }
+        /* End .Khoi_bot position */
+        
+        .Khoi_footer .Khoi_bot .Khoi_box-1 .Khoi_content-1 {
+            color: #FFA52F;
+            font-weight: 600;
+            font-size: 36px;
+            margin-bottom: 4px;
+        }
+        
+        .Khoi_footer .Khoi_bot .Khoi_box-1 .Khoi_content-2 {
+            color: #E7E7E3;
+            font-family: "Open Sans", serif;
+            font-size: 20px;
+            line-height: 27px;
+        }
+        .Khoi_footer .Khoi_bot .Khoi_box-1 {
+            width: 446px;
+            height: 128px;
+        }
+        
+        .Khoi_footer .Khoi_box-2 .Khoi_content-1 {
+            color: #FFA52F;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .Khoi_footer .Khoi_box-2 .Khoi_content-2 a {
+            color: #E7E7E3;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "Open Sans", serif;
+        }
+        .Khoi_footer .Khoi_box-2 .Khoi_content-2 {
+            width: 101px;
+            height: 205px;
+            display: inline-flex;
+            gap: 8px;
+            flex-direction: column;
+        }
+        
+        
+        .Khoi_footer .Khoi_box-2 .Khoi_right .Khoi_social a {
+            font-size: 20px;
+            color: #FAFAFA;
+        }
+        
+        .Khoi_footer .Khoi_box-2 .Khoi_right .Khoi_social {
+            width: 168px;
+            display: inline-flex;
+            gap: 24px;
+            height: 24px;
+        }
+        
+        .Khoi_footer .Khoi_bot .Khoi_box-2 {
+            height: 246px;
+            display: inline-flex;
+            gap: 128px;
+        }
+        
+        .Khoi_footer .Khoi_Khoi_box-3 img {
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .Manh__view-product{
+            padding: 12px;
+            margin: 4px;
+            background-color: #000;
+            color:#fff;
+            border-radius: 6px;
+        }
+        .Manh__view-product:hover{
+            background-color: #ccc;
+            color: #000;
+        }
