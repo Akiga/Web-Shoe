@@ -42,13 +42,13 @@
                             }
                             ?>
                         <!-- Menu thả xuống khi hover -->
-                        <ul class="user-dropdown">
-                            <li>
-                            <?php
-                            if (isset($_SESSION['email'])) {
+                        <?php
+                        if (isset($_SESSION['email'])) {
+                        echo'<ul class="user-dropdown">';
+                            echo'<li>';
                                 echo '<a href="history.php" class="logo_login">';
                                 echo '<i class="fa-solid fa-cart-shopping"></i>';
-                                echo '<span>Customer Order</span>';
+                                echo '<span>Đơn hàng</span>';
                                 echo '</a>';
                             }
                             ?>
@@ -59,7 +59,7 @@
                             if (isset($_SESSION['email'])) {
                                 echo '<a href="Cart.php" class="Khoi_hover">';
                                 echo '<i class="fa-solid fa-bag-shopping"></i>';
-                                echo '<span>Shopping Cart</span>';
+                                echo '<span>Giỏ hàng</span>';
                                 echo '</a>';
                             }
                             ?>
@@ -70,7 +70,7 @@
                             if (isset($_SESSION['email'])) {
                                 echo '<a href="logout.php" class="Khoi_hover">';
                                 echo '<i class="fa-solid fa-right-from-bracket"></i>';
-                                echo '<span>Log Out</span>';
+                                echo '<span>Đăng xuất</span>';
                                 echo '</a>';
                             }
                             ?>

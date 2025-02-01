@@ -39,6 +39,7 @@
         <th>Shoe Size</th>
         <th>Unit Price</th>
         <th>Total Price</th>
+       <th>Rate</th>
     </tr>
    <?php
    $i = 0;
@@ -56,19 +57,57 @@
        <td><?php echo $row['sizeOwn']; ?></td>
        <td><?php echo '$' . number_format($row['giasp']) ?></td>
        <td><?php echo '$' . number_format($row['giasp'] * $row['soluongmua']) ?></td>
+       <td><a href="">Click</a></td>
    </tr>
    <?php
     }
     ?>
 
     <tr>
-        <td colspan="7">
+        <td colspan="8">
             <p class="cartInTable" style="float: left; width:25%;">Total: <?php echo '$' . number_format($totalPrice, 0, '.', ','); ?></p> 
         </td>
     </tr>
 </table>
 
+<div class="bg_cmt">
+    <form action="">
+        <div class="fir">
+            <h1>Rate</h1>
+            <p>Name</p>
+        </div>
+        <label for="tinhtrang">Star: </label>
+            <select id="tinhtrang" name="tinhtrang">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+        <label for="noidung">Comment</label><br>
+        <textarea id="noidung" rows="5" style="resize: none;" name="noidung" required class="cmt"></textarea>
+        <input type="submit" value="Send" name="addCmt">
+    </form>
+</div>
+
 <style>
+
+    .bg_cmt{
+        width: 730px;
+        margin: auto;
+        background-color: #fff;
+        padding: 12px;
+        margin-top: 12px;
+        border-radius: 4px;
+    }
+    .fir{
+        display: flex;
+        align-items: baseline;
+    }
+    .cmt{
+        width: 100%;
+    }
     /* Tiêu đề */
 h1 {
     text-align: center;

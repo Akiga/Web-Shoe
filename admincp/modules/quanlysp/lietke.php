@@ -32,7 +32,7 @@
                 <td><?php echo $row['tensanpham']; ?></td>
                 <td><?php echo $row['masanpham']; ?></td>
                 <td><img class="product-image" src="modules/quanlysp/uploads/<?php echo $row['hinhanh']; ?>" alt="Product Image"></td>
-                <td><?php echo number_format($row['giasp'], 0, ',', '.'); ?> $</td>
+                <td><?php echo number_format($row['giasp'], 0, ',', '.'); ?> ₫</td>
                 <td><?php 
                     $sizes = [];
                     if ($row['size'] != '0') $sizes[] = $row['size'];

@@ -103,11 +103,11 @@ if (isset($_SESSION['success'])) {
     <main class="Nhat_contain-lFrame-rFrame">
         <form class="Nhat_lFrame" id="form-dang-ky" action="" method="post">
             <div class="Nhat_contain-Register-SignUpWith">
-                <div class="Nhat_register">Register</div>
+                <div class="Nhat_register">ĐĂNG KÍ</div>
             </div>
 
             <div class="Nhat_contain-yourName">
-                <label for="first-name" class="Nhat_yourName-label">Your Name</label>
+                <label for="first-name" class="Nhat_yourName-label">Tên của bạn</label>
                 <div id="Nhat_input-field-FN">
                     <div id="Nhat_firstName">
                         <input type="text" name="first-name" placeholder="First Name">
@@ -123,25 +123,25 @@ if (isset($_SESSION['success'])) {
             </div>
             
             <div class="Nhat_gender">
-                <label class="Nhat_gender-label">Gender</label>
+                <label class="Nhat_gender-label">Giới tính</label>
                 <div>
                     <span class="Nhat_gender-div-span1">
                         <input type="radio" name="gender" id="male" value="male" class="pointer"> 
-                        <label class="Nhat_each-gender-label"> Male</label>
+                        <label class="Nhat_each-gender-label"> Nam giới</label>
                     </span>
                     <span class="Nhat_gender-div-span2">
                         <input type="radio" name="gender" id="female" value="female" class="pointer">
-                        <label class="Nhat_each-gender-label">Female</label>
+                        <label class="Nhat_each-gender-label">Nữ giới</label>
                     </span>
                     <span class="Nhat_gender-div-span3">
                         <input type="radio" name="gender" id="other" value="other" class="pointer">
-                        <label class="Nhat_each-gender-label"> Other</label>
+                        <label class="Nhat_each-gender-label"> Khó nói</label>
                     </span>
                 </div>
             </div>
             
             <div class="Nhat_contain-LoginDetail">
-                <label for="email" class="Nhat_LoginDetail-label">Login Details</label>
+                <label for="email" class="Nhat_LoginDetail-label">Chi tiết đăng nhập</label>
                 <div id="Nhat_input-field-Email">
                     <div id="Nhat_Email">
                         <input type="email" name="email" id="email" placeholder="Email">
@@ -151,7 +151,7 @@ if (isset($_SESSION['success'])) {
                 <div id="Nhat_input-field-Password">
                     <div id="Nhat_Password">
                         <input type="password" name="password" id="password" placeholder="Password">
-                        <div id="Nhat_helper-text-Password">Minimum 8 characters with at least one uppercase, one lowercase, one special character and a number.</div>
+                        <div id="Nhat_helper-text-Password">Tối thiểu 8 ký tự trong đó có ít nhất một chữ hoa, một chữ thường, một ký tự đặc biệt và một số.</div>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@ if (isset($_SESSION['success'])) {
 
             <button type="submit" name="dangky" class="pointer Nhat_button-Register">
                 <div>
-                    <span>REGISTER</span>
+                    <span>ĐĂNG KÍ</span>
                     <i class="fas fa-arrow-right"></i>
                 </div>
             </button>
@@ -196,7 +196,7 @@ if (isset($_SESSION['success'])) {
             
             <a href="login.php" class="pointer Nhat_rFrame-button-Join" style="text-decoration: none;">
                 <div>
-                    <span>LOGIN</span>
+                    <span>ĐĂNG NHẬP</span>
                     <i class="fas fa-arrow-right"></i>
                 </div>
             </a>

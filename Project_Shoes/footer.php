@@ -5,7 +5,7 @@
                     <div class="Khoi_top-left">
 
                         <div class="Khoi_content">
-                            <div class="Khoi_content-1">JOIN OUR KICKSPLUS CLUB & GET 15% OFF</div>
+                            <div class="Khoi_content-1">THAM GIA CÂU LẠC BỘ KICKSPLUS CỦA CHÚNG TÔI VÀ NHẬN GIẢM GIÁ 15%</div>
                         </div>
 
                         
@@ -20,14 +20,14 @@
                 <div class="Khoi_bot">
                     <div class="Khoi_box-1">
                         <div class="Khoi_content-1">About us</div>
-                        <div class="Khoi_content-2">We are the biggest hyperstore in the universe. We got you all cover
-                            with our exclusive collections and latest drops.</div>
+                        <div class="Khoi_content-2">Chúng tôi là siêu thị lớn nhất vũ trụ. Chúng tôi sẽ bảo vệ bạn
+                        với các bộ sưu tập độc quyền và các sản phẩm mới nhất.</div>
                     </div>
 
 
                     <div class="Khoi_box-2">
                         <div class="Khoi_left">
-                            <div class="Khoi_content-1">Categories</div>
+                            <div class="Khoi_content-1">Danh mục</div>
                             <div class="Khoi_content-2">
                                 <a href="#" class="Khoi_block">Runners</a>
                                 <a href="#" class="Khoi_block">Sneakers</a>

@@ -55,7 +55,7 @@
                         <div class="Khoi_content-1">NIKE AIR MAX</div>
                         <div class="Khoi_content-2">Nike introducing the new air max for everyone's comfort</div>
                         <a href="listingpage.php?quanly=danhmucsanpham" class="Khoi_content-3">
-                            <div class="Khoi_button">SHOP NOW</div >
+                            <div class="Khoi_button">MUA NGAY</div >
                         </a>
                     </div>
                 </div>
@@ -73,10 +73,10 @@
             <div class="Khoi_inner-wrap">
                 <div class="Khoi_top">
                     <div class="Khoi_top-left" id="newdrops">
-                        <div class="Khoi_content">DON'T MISS OUT NEW DROPS</div>
+                        <div class="Khoi_content">ĐỪNG BỎ LỠ CÁC ƯU ĐÃI MỚI</div>
                     </div>
                     <a href="listingpage.php?quanly=danhmucsanpham" class="Khoi_bot-right">
-                        <div class="Khoi_button">SHOP NEW DROPS</div>
+                        <div class="Khoi_button">MUA HÀNG MỚI</div>
                     </a>
                 </div>
                     <?php
@@ -99,7 +99,7 @@
                                     </h3>
                                 </div>
                                 <a class="Khoi_inner-price" href="product.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham'] ?>">
-                                    <div class="Khoi_cost">VIEW PRODUCT - <?php echo number_format($row_pro['giasp']).'$'?></div>
+                                    <div class="Khoi_cost">XEM SẢN PHẨM - <?php echo number_format($row_pro['giasp']).'₫'?></div>
                                 </a>
                             </div>
                     </div>
@@ -116,7 +116,7 @@
             <div class="Khoi_inner-wrap">
                 <div class="Khoi_top">
                     <div class="Khoi_inner-top-left">
-                        <div class="Khoi_content">CATEGRORIES</div>
+                        <div class="Khoi_content">DANH MỤC</div>
                     </div>
                 </div>
 
@@ -143,10 +143,10 @@
             <div class="Khoi_inner-wrap">
                 <div class="Khoi_top">
                     <div class="Khoi_top-left">
-                        <div class="Khoi_content">REVIEWS</div>
+                        <div class="Khoi_content">ĐÁNH GIÁ</div>
                     </div>
                     <div onclick="toggleReviews()" class="Khoi_bot-right">
-                        <div class="Khoi_button">SEE ALL</div>
+                        <div class="Khoi_button">XEM THÊM</div>
                     </div>
                 </div>
                 <div class="Khoi_bot">

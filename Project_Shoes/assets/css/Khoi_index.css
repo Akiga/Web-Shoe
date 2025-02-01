@@ -113,7 +113,7 @@ a {
 /* .Khoi_section-2 */
 
 .Khoi_section-2 .Khoi_inner-wrap {
-    background-image: url('https://s3-alpha-sig.figma.com/img/9934/a728/2b3b304220704b18aabf69a3b57e7064?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EvTLJbswYXcBAreaVhNIvRtkUUfivTVj7vJVJdkg1Q5zYKQY0QG~P28H2NLUdByfsxDeCLFPtIOSsLcqpLS6Lwh9l4iMJwhL9B8Snd39Ms~nZa0GmNxmnRdDNI5ojwSaY11wXStreygJacikYeE-CFzaVRLL~R6RiH~lGvXpKV8Yg36q0kmZJTXQSAz8c91iaW0I6h~FiaLFb5Pj24Yhe~OHE8mYepUzP-6IxT-eyF5jkLLzaZ~71tie~M3gvFWEj8N6dugosdBsfv9pgw9LBouesMfa3FBwrnyJ8ZY16EzskdzpJeNJh9SaEDFd389RpXpkm7~1Lg-K7oF9Th490Q__');
+    background-image: url('../images/bgindex.png');
     height: 750px;
     background-size: cover; /* Làm cho ảnh phủ toàn bộ khung */
     background-position: center; /* Canh giữa hình ảnh trong khung */
@@ -246,7 +246,7 @@ a {
 
 .Khoi_section-3 .Khoi_top-left .Khoi_content {
     font-weight: 600;
-    font-size: 74px;
+    font-size: 70px;
     color: #232321;
     line-height: 1;
 }

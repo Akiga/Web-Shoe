@@ -42,9 +42,9 @@
                 <img src="../admincp/modules/quanlysp/uploads/<?php echo $row_chitiet['hinhanh']?>" class="Manh_shoe">
             </div>
             <div class="Manh_desc">
-                <p class="Manh_NR">New Release</p>
+                <p class="Manh_NR">Phiên bản mới</p>
                 <h1><?php echo strtoupper($row_chitiet['tensanpham']) ?></h1>
-                <p class="Manh_price"><?php echo number_format($row_chitiet['giasp']).'$'?></p>
+                <p class="Manh_price"><?php echo number_format($row_chitiet['giasp']).'₫'?></p>
 
                 
                 <p class="Manh_size">SIZE</p>
@@ -83,18 +83,18 @@ if(isset($_SESSION['email'])) {
     <!-- end thêm giỏ hàng -->
 <?php
 } else {
-    echo '<p>Please log in to add items to the cart or proceed to checkout.</p>';
+    echo '<p>Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng</p>';
 }
 ?>
-                <p style="font-size: 20px; font-weight: 600; margin-top: 36px;">About the product</p>
+                <p style="font-size: 20px; font-weight: 600; margin-top: 36px;">Về sản phẩm</p>
                 <p style="opacity: 80%; font-size: 20px; margin-top: 32px;">
-                    This product is excluded from all promotional discounts and offers.</p>
+                Sản phẩm này không được áp dụng cho mọi chương trình giảm giá và khuyến mại.</p>
                 <ul style="margin-left: 30px; margin-top: 32px">
                     <li style="opacity: 80%;font-size: 18px;">
                         <?php echo strtoupper($row_chitiet['noidung'])?>
                     </li>
                     <li style="opacity: 80%; font-size: 18px; margin-top: 12px">
-                        Join adiClub to get unlimited free standard shipping, returns, & exchanges.
+                    Tham gia adiClub để được miễn phí không giới hạn dịch vụ giao hàng, trả hàng và đổi hàng tiêu chuẩn.
                     </li>
                 </ul>
             </div>

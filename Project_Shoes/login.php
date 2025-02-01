@@ -19,7 +19,7 @@
         $row_data = mysqli_fetch_array($row);
         $_SESSION['email'] = $email;
         $_SESSION['id_khachhang'] = $row_data['userid'];
-         echo'<script>alert("  Ban đã đăng nhập thành công");</script>';
+         echo'<script>alert("  Bạn đã đăng nhập thành công");</script>';
        header("Location: index.php");
  
      }else{
@@ -72,7 +72,7 @@
         <form class="Nhat_lFrame"  method="post">
 
             <label for="login" class="Nhat_title">
-                <div class="Nhat_title1">Login</div>
+                <div class="Nhat_title1">ĐĂNG NHẬP</div>
             </label>
 
             <div id="Nhat_input-field-Email">
@@ -93,15 +93,15 @@
 
             <button type="submit" name="login" class="pointer Nhat_button-Login">
                 <div>
-                    <span>EMAIL LOGIN</span>
+                    <span>ĐĂNG NHẬP</span>
                     <i class="fas fa-arrow-right"></i>
                 </div>
             </button>
 
             <div class="Nhat_Agreement">
                 <label>
-                    By clicking 'Log In' you agree to our website 
-                    <a href="#">KicksClub Terms & Conditions</a>, <a href="#">Kicks Privacy Notice</a> and <a href="#">Terms & Conditions</a>.
+                Bằng cách nhấp vào 'Đăng nhập', bạn đồng ý với trang web của chúng tôi
+                    <a href="#">Điều khoản và điều kiện của KicksClub</a>, <a href="#">Thông báo về quyền riêng tư của Kicks</a> and <a href="#">Điều khoản & Điều kiện</a>.
                 </label>
             </div>
         </form>
@@ -110,27 +110,27 @@
         <div class="Nhat_rFrame">
             <div class="Nhat_rFrame-content">
                 <div class="Nhat_rFrame-content-h">
-                    <div class="Nhat_rFrame-content-h-">Join Kicks Club Get Rewarded Today.</div>
+                    <div class="Nhat_rFrame-content-h-">Tham gia Kicks Club và nhận phần thưởng ngay hôm nay.</div>
                 </div>
 
-                <p class="Nhat_rFrame-content1">As kicks club member you get rewarded with what you love for doing what you love. Sign up today and receive immediate access to these Level 1 benefits:</p>
+                <p class="Nhat_rFrame-content1">Với tư cách là thành viên câu lạc bộ Kicks, bạn sẽ được thưởng những gì bạn yêu thích khi làm những gì bạn yêu thích. Đăng ký ngay hôm nay và nhận ngay quyền truy cập vào các lợi ích Cấp độ 1 sau:</p>
                 
                 <div class="Nhat_rFrame-content2">
                     <ul class="Nhat_rFrame-content2-">
                         <li>Free shipping</li>
-                        <li>A 15% off voucher for your next purchase</li>
-                        <li>Access to Members Only products and sales</li>
-                        <li>Access to adidas Running and Training apps</li>
-                        <li>Special offers and promotions</li>
+                        <li>Phiếu giảm giá 15% cho lần mua hàng tiếp theo của bạn</li>
+                        <li>Truy cập vào các sản phẩm và chương trình khuyến mại dành riêng cho thành viên</li>
+                        <li>Truy cập vào ứng dụng Chạy bộ và Tập luyện của adidas</li>
+                        <li>Khuyến mãi và ưu đãi đặc biệt</li>
                     </ul>
                 </div>
                     
-                <p class="Nhat_rFrame-content3">Join now to start earning points, reach new levels and unlock more rewards and benefits from adiClub.</p>
+                <p class="Nhat_rFrame-content3">Tham gia ngay để bắt đầu kiếm điểm, đạt cấp độ mới và mở khóa thêm nhiều phần thưởng và lợi ích từ adiClub.</p>
             </div>
             
             <a href="register.php" class="pointer Nhat_rFrame-button-Join" style="text-decoration: none;">
                 <div>
-                    <span>Register</span>
+                    <span>Đăng ký</span>
                     <i class="fas fa-arrow-right"></i>
                 </div>
             </a>

@@ -52,8 +52,8 @@
             <a href="themgiohang.php?tru=<?php echo $cart_item['id'] ?>"><i class="fa-solid fa-minus"></i></a>
         </td>
         <td><?php echo $cart_item['size']; ?></td>
-        <td><?php echo '$' . number_format($cart_item['giasp'], 0, '.', ','); ?></td> 
-        <td><?php echo '$' . number_format($itemTotal, 0, '.', ','); ?></td>
+        <td><?php echo '₫' . number_format($cart_item['giasp'], 0, '.', ','); ?></td> 
+        <td><?php echo '₫' . number_format($itemTotal, 0, '.', ','); ?></td>
         <td><a href="themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Delete</a></td>
     </tr>
     <?php
@@ -61,8 +61,8 @@
     ?>
     <tr>
         <td colspan="8">
-            <p class="cartInTable" style="float: left; width:25%;">Total: <?php echo '$' . number_format($totalPrice, 0, '.', ','); ?></p> 
-            <a class="cartInTable" style="float: left; width:50%;" href="checkout.php">Proceed to Checkout</a>
+            <p class="cartInTable" style="float: left; width:25%;">Total: <?php echo '₫' . number_format($totalPrice, 0, '.', ','); ?></p> 
+            <a class="cartInTable" style="float: left; width:50%;" href="checkout.php?totalPrice=<?php echo $totalPrice; ?>">Proceed to Checkout</a>
             <p class="cartInTable" style="float: right;width:25%;"><a href="themgiohang.php?xoatatca=1">Delete All</a></p>
         </td>
     </tr>
@@ -77,97 +77,6 @@
         }
     ?>
 </table>
-
-
-<style>
- /* Tiêu đề */
-h1 {
-    text-align: center;
-    font-size: 40px;
-    margin: 12px 0px; /* Giảm khoảng cách trên và dưới tiêu đề */
-    color: #333;
-    font-family: "Rubik", sans-serif;
-}
-
-/* Bảng Giỏ hàng */
-table {
-    width: 80%; /* Giảm độ rộng bảng nếu cần */
-    margin: 15px auto; /* Giảm khoảng cách giữa bảng và các phần tử xung quanh */
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #555;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Hàng đầu tiên */
-table th {
-    background-color: #4A69E2;
-    color: #fff;
-    padding: 12px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Hàng dữ liệu */
-table td {
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Hình ảnh trong bảng */
-table td img {
-    max-width: 80px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Hàng lẻ - màu nền khác nhau */
-table tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-
-table tr:nth-child(even) {
-    background-color: #fff;
-}
-
-/* Hiệu ứng hover */
-table tr:hover {
-    background-color: #f1f5fc;
-    cursor: pointer;
-}
-
-/* Tổng tiền và các hành động */
-.cartInTable {
-    font-size: 18px;
-    text-align: center;
-    color: #555;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Tùy chỉnh tổng tiền */
-.cartInTable {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-}
-
-.cartInTable a {
-    color: #4A69E2;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.cartInTable a:hover {
-    color: #1d4ed8;
-}
-
-</style>
 
 
 <div class="Manh_Related-Products">

@@ -70,12 +70,8 @@ a {
     flex-grow: 0;
 }
 .Nhat_title1 { /* Login */
-    width: 88px;
     height: 38px;
     
-    /* Rubik/32px */
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 38px;

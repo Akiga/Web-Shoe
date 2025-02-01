@@ -37,11 +37,16 @@
     <!-- <header> -->
     <?php
         include("header.php");
+        if (isset($_GET['totalPrice'])) {
+            $totalPrice = $_GET['totalPrice'];
+        }
+        $_SESSION['totalPrice'] = $totalPrice;
+
     ?>
     <!-- </header> -->
     <div class="divH"></div>
     <!-- <main> -->
-        <form action="xulythanhtoan.php" method="POST" class="container">
+        <form action="xulythanhtoanmomo.php" method="POST" class="container" enctype="application/x-www-form-urlencoded">
             <div class="Nhat_CD-title1">Contact Details</div>
             <div class="Nhat_CD-title2">We will use these details to keep you inform about your delivery.</div>
             <div class="email">Your email: <?php echo $_SESSION['email']?></div>
@@ -54,20 +59,16 @@
                 </div>
 
             <label for="">Payment method</label>
-                <div id="Nhat_SA-input-field-DA">
-                    <div id="Nhat_SA-DA">
-                        <label for="choice1" style="font-size:20px; display:inline-block">Cash:</label>
-                        <input type="radio" name="choice" value="Cash" id="choice1">
+                <button type="submit" name="payUrl" value="MoMo" class="checkout-button">MoMo</button>
+        </form>
 
-                    <label for="choice2" style="font-size:20px; display:inline-block">Bank code:</label>
-                    <input type="radio" name="choice" value="Bank code" id="choice2">
+        <form action="" method="POST" class="container" enctype="application/x-www-form-urlencoded" onsubmit="return validateForm()">
+            <input type="hidden" name="shippingAddressInfo" value="<?php echo $shippingAddressInfo; ?>">
+            <button type="submit" name="payUrl" value="VnPay" class="checkout-button">VnPay</button>
+        </form>
 
-                    <label for="choice3" style="font-size:20px; display:inline-block" >Bank card</label>
-                    <input type="radio" name="choice" value="Bank card" id="choice3">
-
-                    </div>
-                </div>
-                <input type="submit" value="Check Out" name="thanhtoan" class="checkout-button">
+        <form action="" method="POST" class="container" enctype="application/x-www-form-urlencoded" onsubmit="return validateForm()">
+            <button type="submit" name="payUrl" value="PayPal" class="checkout-button">PayPal</button>
         </form>
     <!-- </main> -->
 <div class="divH"></div>
@@ -79,3 +80,14 @@
 </body>
 
 </html>
+
+<script>
+        function validateForm() {
+            const address = document.getElementById('address').value;
+            if (!address) {
+                alert('Vui lòng nhập địa chỉ giao hàng trước khi tiếp tục!');
+                return false; // Ngăn không cho form được gửi
+            }
+            return true; // Cho phép form được gửi
+        }
+    </script>
