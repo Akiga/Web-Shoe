@@ -26,18 +26,17 @@
     $query_lietke_dh = mysqli_query($mysqli,$sql_lietke_dh)
 
 ?>
-<h1 style="width:100%; text-align:center; font-size:40px; margin:12px 0px">Orders</h1>
+<h1 style="width:100%; text-align:center; font-size:40px; margin:12px 0px">Đơn hàng</h1>
 <table border="1" style="border-collapse:collapse; width:80%; margin:auto;">
 
     <tr>
         <th>ID</th>
-        <th>Order Code</th>
-        <th>Customer Name</th>
-        <th>Address</th>
+        <th>Mã đơn hàng</th>
+        <th>Địa chỉ</th>
         <th>Email</th>
-        <th>Payment Method</th>
-        <th>Status</th>
-        <th>Actions</th>
+        <th>Phương thức thanh toán</th>
+        <th>Trạng thái</th>
+        <th>Chi tiết</th>
     </tr>
    <?php
    $i=0;
@@ -47,30 +46,29 @@
    <tr>
        <td><?php echo $i?></td>
        <td><?php echo $row['code_cart']?></td>
-       <td><?php echo $row['first_name'] . ' '. $row['last_name']?></td>
        <td><?php echo $row['diachi']?></td>
        <td><?php echo $row['email']?></td>
        <td><?php echo $row['ThanhToan']?></td>
        <td>
         <?php if($row['cart_status']==1){
-            echo 'Waiting for confirmation';
+            echo 'Đang chờ xác nhận';
         }elseif ($row['cart_status'] == 0) {
-            echo 'Waiting for delivery';
+            echo 'Đang chờ giao hàng';
         } elseif ($row['cart_status'] == 2) {
-            echo '<p class="tranfer">Delivered</p>';
-            echo '<a href="#" onclick="alert(\'Please contact 0123456789 to report an issue.\')">Return product</a>';
+            echo '<p class="tranfer">Đã giao hàng</p>';
+            echo '<a href="#" onclick="alert(\'Vui lòng liên hệ 0123456789 để báo cáo sự cố.\')">Trả lại sản phẩm</a>';
         }elseif ($row['cart_status'] == 3) {
-            echo '<p class="huy">Order canceled</p>';
+            echo '<p class="huy">Đơn hàng đã hủy</p>';
         }elseif ($row['cart_status'] == 4) {
-            echo '<p class="huy">Returned</p>';
+            echo '<p class="huy">Đã trả lại</p>';
         }elseif ($row['cart_status'] == 5) {
-            echo '<p class="green">Completed</p>';
+            echo '<p class="green">Hoàn thành</p>';
         }
         ?>
         </td>
 
        <td>
-           <a href="xemdonhang.php?code=<?php echo$row['code_cart']?>">View order</a>
+           <a href="xemdonhang.php?code=<?php echo$row['code_cart']?>">Xem đơn hàng</a>
        </td>
    </tr>
    <?php
@@ -165,7 +163,7 @@ table .green {
 
 <div class="Manh_Related-Products">
             <section class="product-suggestions">
-                <h2 style="font-size: 48px;">You may also like</h2>
+                <h2 style="font-size: 48px;">Bạn cũng có thể thích</h2>
                 <div class="carousel">
                   <button class="carousel-control prev" onclick="scrollCarousel(-1)">❮</button>
                   <?php
@@ -180,7 +178,7 @@ table .green {
                     <div class="product-card">
                       <img src="../admincp/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh']?>" alt="Adidas Shoe 1">
                       <h3><?php echo strtoupper($row_pro['tensanpham']) ?></h3>
-                      <a href="product.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham']?>"><button class="view-button">VIEW PRODUCT - <?php echo number_format($row_pro['giasp']).'$'?></button></a>
+                      <a href="product.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham']?>"><button class="view-button">XEM SẢN PHẨM - <?php echo number_format($row_pro['giasp']).'$'?></button></a>
                     </div>
                     <?php
                     }

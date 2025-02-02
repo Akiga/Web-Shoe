@@ -19,18 +19,18 @@
     <?php
     include("header.php");
     ?>
-<h1 style="width:100%; text-align:center;font-size:40px; margin:12px 0px">Shopping Cart</h1>
+<h1 style="width:100%; text-align:center;font-size:40px; margin:12px 0px">Giỏ hàng</h1>
 
 <table style="width: 1320px; text-align: center; border-collapse: collapse; margin:auto; margin-top:15px;" border="1">
     <tr>
         <th>ID</th>
-        <th>Product Name</th>
-        <th>Image</th>
-        <th>Quantity</th>
-        <th>Size</th>
-        <th>Product Price</th>
-        <th>Total Price</th>
-        <th>Actions</th>
+        <th>Tên sản phẩm</th>
+        <th>Hình ảnh</th>
+        <th>Số lượng</th>
+        <th>Kích cỡ</th>
+        <th>Giá sản phẩm</th>
+        <th>Tổng giá</th>
+        <th></th>
     </tr>
 
     <?php
@@ -54,16 +54,16 @@
         <td><?php echo $cart_item['size']; ?></td>
         <td><?php echo '₫' . number_format($cart_item['giasp'], 0, '.', ','); ?></td> 
         <td><?php echo '₫' . number_format($itemTotal, 0, '.', ','); ?></td>
-        <td><a href="themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Delete</a></td>
+        <td><a href="themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Xóa</a></td>
     </tr>
     <?php
             }
     ?>
     <tr>
         <td colspan="8">
-            <p class="cartInTable" style="float: left; width:25%;">Total: <?php echo '₫' . number_format($totalPrice, 0, '.', ','); ?></p> 
-            <a class="cartInTable" style="float: left; width:50%;" href="checkout.php?totalPrice=<?php echo $totalPrice; ?>">Proceed to Checkout</a>
-            <p class="cartInTable" style="float: right;width:25%;"><a href="themgiohang.php?xoatatca=1">Delete All</a></p>
+            <p class="cartInTable" style="float: left; width:25%;">Tổng: <?php echo '₫' . number_format($totalPrice, 0, '.', ','); ?></p> 
+            <a class="cartInTable" style="float: left; width:50%;" href="checkout.php?totalPrice=<?php echo $totalPrice; ?>">Tiến hành thanh toán</a>
+            <p class="cartInTable" style="float: right;width:25%;"><a href="themgiohang.php?xoatatca=1">Xóa tất cả</a></p>
         </td>
     </tr>
 
@@ -71,7 +71,7 @@
         } else {
     ?>
     <tr>
-        <td colspan="8"><p>Your cart is empty</p></td>
+        <td colspan="8"><p>Giỏ hàng của bạn đang trống</p></td>
     </tr>
     <?php
         }
@@ -81,7 +81,7 @@
 
 <div class="Manh_Related-Products">
             <section class="product-suggestions">
-                <h2 style="font-size: 48px;">You may also like</h2>
+                <h2 style="font-size: 48px;">Bạn cũng có thể thích</h2>
                 <div class="carousel">
                   <button class="carousel-control prev" onclick="scrollCarousel(-1)">❮</button>
                   <?php
@@ -96,7 +96,7 @@
                     <div class="product-card">
                       <img src="../admincp/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh']?>" alt="Adidas Shoe 1">
                       <h3><?php echo strtoupper($row_pro['tensanpham']) ?></h3>
-                      <a href="product.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham']?>"><button class="view-button">VIEW PRODUCT - <?php echo number_format($row_pro['giasp']).'$'?></button></a>
+                      <a href="product.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham']?>"><button class="view-button">Xem sản phẩm - <?php echo number_format($row_pro['giasp']).'$'?></button></a>
                     </div>
                     <?php
                     }

@@ -47,18 +47,18 @@
     <div class="divH"></div>
     <!-- <main> -->
         <form action="xulythanhtoanmomo.php" method="POST" class="container" enctype="application/x-www-form-urlencoded">
-            <div class="Nhat_CD-title1">Contact Details</div>
-            <div class="Nhat_CD-title2">We will use these details to keep you inform about your delivery.</div>
-            <div class="email">Your email: <?php echo $_SESSION['email']?></div>
-            <label for="shippingAddressInfo">Shipping Address</label>
+            <div class="Nhat_CD-title1">Chi tiết liên lạc</div>
+            <div class="Nhat_CD-title2">Chúng tôi sẽ sử dụng những thông tin này để thông báo cho bạn về việc giao hàng.</div>
+            <div class="email">Email của bạn: <?php echo $_SESSION['email']?></div>
+            <label for="shippingAddressInfo">Địa chỉ giao hàng</label>
                 <div id="Nhat_SA-input-field-DA">
                     <div id="Nhat_SA-DA">
                         <input type="text" name="shippingAddressInfo" id="address" placeholder="Find Delivery Address*" required>
-                        <div class="hint">Start typing your street address or zip code for suggestion</div>
+                        <div class="hint">Bắt đầu nhập địa chỉ đường phố hoặc mã bưu chính của bạn để được gợi ý</div>
                     </div>
                 </div>
 
-            <label for="">Payment method</label>
+            <label for="">Phương thức thanh toán</label>
                 <button type="submit" name="payUrl" value="MoMo" class="checkout-button">MoMo</button>
         </form>
 
