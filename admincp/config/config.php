@@ -5,4 +5,7 @@
         echo"Lỗi". mysqli_connect_error();
         exit();
     }
+
+
+
 ?>

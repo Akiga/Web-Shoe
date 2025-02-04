@@ -32,6 +32,8 @@
 
 <?php
     include("../admincp/config/config.php");
+    require_once("./config.php");            
+
     session_start();
 ?>
     <!-- <header> -->
@@ -46,35 +48,44 @@
     <!-- </header> -->
     <div class="divH"></div>
     <!-- <main> -->
-        <form action="xulythanhtoanmomo.php" method="POST" class="container" enctype="application/x-www-form-urlencoded">
-            <div class="Nhat_CD-title1">Chi tiết liên lạc</div>
-            <div class="Nhat_CD-title2">Chúng tôi sẽ sử dụng những thông tin này để thông báo cho bạn về việc giao hàng.</div>
-            <div class="email">Email của bạn: <?php echo $_SESSION['email']?></div>
-            <label for="shippingAddressInfo">Địa chỉ giao hàng</label>
-                <div id="Nhat_SA-input-field-DA">
-                    <div id="Nhat_SA-DA">
-                        <input type="text" name="shippingAddressInfo" id="address" placeholder="Find Delivery Address*" required>
-                        <div class="hint">Bắt đầu nhập địa chỉ đường phố hoặc mã bưu chính của bạn để được gợi ý</div>
-                    </div>
-                </div>
+    <script>
+    function copyAddress() {
+        var address = document.getElementById("address").value;
+        document.getElementById("address2").value = address;
 
-            <label for="">Phương thức thanh toán</label>
-                <button type="submit" name="payUrl" value="MoMo" class="checkout-button">MoMo</button>
-        </form>
+        // Kiểm tra nếu địa chỉ trống, không cho submit
+        if (address.trim() === "") {
+            alert("Vui lòng nhập địa chỉ giao hàng trước khi thanh toán.");
+            return false;
+        }
+        return true;
+    }
+    </script>
 
-        <form action="" method="POST" class="container" enctype="application/x-www-form-urlencoded" onsubmit="return validateForm()">
-            <input type="hidden" name="shippingAddressInfo" value="<?php echo $shippingAddressInfo; ?>">
-            <button type="submit" name="payUrl" value="VnPay" class="checkout-button">VnPay</button>
-        </form>
+    <form action="xulythanhtoanmomo.php" method="POST" class="container">
+        <div class="Nhat_CD-title1">Chi tiết liên lạc</div>
+        <div class="email">Email của bạn: <?php echo $_SESSION['email']?></div>
+        
+        <label for="shippingAddressInfo">Địa chỉ giao hàng</label>
+        <input type="text" name="shippingAddressInfo" id="address" placeholder="Nhập địa chỉ*" required>
 
-        <form action="" method="POST" class="container" enctype="application/x-www-form-urlencoded" onsubmit="return validateForm()">
-            <button type="submit" name="payUrl" value="PayPal" class="checkout-button">PayPal</button>
-        </form>
+        <label>Phương thức thanh toán</label>
+        <button type="submit" name="payUrl" value="MoMo" class="checkout-button">MoMo</button>
+    </form>
+
+    <form action="xulythanhtoanVnPay.php" method="POST" class="container" onsubmit="return copyAddress()">
+        <input type="text" name="shippingAddressInfo" id="address2" hidden>
+        <input class="form-control" id="order_id" name="order_id" type="hidden" value="<?php echo date("YmdHis") ?>"/>
+        <button type="submit" name="redirect" value="VnPay" class="checkout-button">VnPay</button>
+    </form>
+
+
     <!-- </main> -->
 <div class="divH"></div>
     <?php
         include("footer.php");
     ?>
+    
 
     
 </body>
@@ -90,4 +101,4 @@
             }
             return true; // Cho phép form được gửi
         }
-    </script>
+</script>
